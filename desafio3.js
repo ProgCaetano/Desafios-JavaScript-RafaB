@@ -1,11 +1,36 @@
-//Fluxo de decisão
+let frontorback = window.prompt('Olá, você gostaria de ir para a área de Front-And ou Back-And?')
 
-// 1. Se quer seguir para área de Front-End ou seguir para a área de Back-End.
+if (frontorback == "Front-And") {
+    let reactorvue = window.prompt('Na área de Front-And, você prefere React ou Vue?');
+    window.alert('Ambas as tecnologias são interessantes!');
+    
+} else if (frontorback == "Back-And") { 
+    let corjava = window.prompt('Na área de Back-And, você prefere C# ou Java?');
+    window.alert('Ambas as tecnologias são interessantes!');
+    
+}
 
 
+//******************* */
 
-// 2. Caso esteja na área de Front-End, se quer aprender React ou aprender Vue. Caso esteja na área de Back-End, poderá aprender C# ou aprender Java.
+let especialorfull = window.prompt('Voce deseja se especializar na área ou ser um programador Fullstack?')
 
-// 3. Depois, independente das escolhas anteriores, o usuário poderá escolher entre seguir se especializando na área escolhida ou seguir se desenvolvendo para se tornar Fullstack. Você deve exibir na tela uma mensagem específica para cada escolha.
+if (especialorfull == "especializar"){
+    window.alert('Muito bem! continue se especializando que tudo dará certo, você vai conseguir!!');
+} else if ( especialorfull == "Fullstack" ){
+    window.alert('Seu futuro será promissor, continue sua jornada!');
+}
 
-// 4. Por fim, pergunte quais são as tecnologias nas quais a pessoa gostaria de se especializar ou de conhecer. Aqui, a pessoa pode responder N tecnologias, uma de cada vez. Então, enquanto ela continuar respondendo ok para a pergunta: “Tem mais alguma tecnologia que você gostaria de aprender?”, continue apresentando para ela o Prompt, para que ela complete o nome da tecnologia em questão. E, logo depois, apresente uma mensagem comentando algo sobre a linguagem inserida.
+//***********************
+
+
+n = 0
+
+while (n < 5 ) {
+     let tecnologia = window.prompt('Em qual tecnologia voce gostaria de se especializar?');
+     tecnologia = tecnologia + ','
+     n += 1
+}
+
+window.alert(tecnologia);
+
